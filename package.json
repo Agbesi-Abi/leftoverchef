@@ -51,7 +51,8 @@
     "react-native-web": "^0.20.0",
     "react-native-webview": "13.6.4",
     "react-native-youtube-iframe": "2.3.0",
-    "zustand": "^5.0.5"
+    "zustand": "^5.0.5",
+    "expo-updates": "~0.28.13"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

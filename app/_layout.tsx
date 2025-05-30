@@ -37,39 +37,39 @@ export default function RootLayout() {
       <RecipeProvider>
         <FavoritesProvider>
           <StatsProvider>
-            <Stack 
-              screenOptions={{ 
-                headerShown: false
-              }}
-              
-            >
+            <Stack screenOptions={{ headerShown: false }}>
+              <Stack.Screen name="index" redirect/>
               <Stack.Screen 
-                name="index" 
-                redirect
+                name="sign-in" 
+                options={{ animation: 'none' }}
               />
               <Stack.Screen 
-                name="sign-in"
-                options={{
-                  animation: 'none'
-                }}
+                name="sign-up" 
+                options={{ animation: 'slide_from_right' }}
               />
               <Stack.Screen 
-                name="sign-up"
-                options={{
-                  animation: 'slide_from_right'
-                }}
+                name="(tabs)" 
+                options={{ animation: 'fade' }}
               />
               <Stack.Screen 
-                name="(tabs)"
-                options={{
-                  animation: 'fade'
-                }}
+                name="onboarding" 
+                options={{ animation: 'fade' }}
               />
               <Stack.Screen 
-                name="onboarding"
-                options={{
-                  animation: 'fade'
-                }}
+                name="badges" 
+                options={{ animation: 'fade' }}
+              />
+              <Stack.Screen 
+                name="meal-planner" 
+                options={{ animation: 'fade' }}
+              />
+              <Stack.Screen 
+                name="recipe/[id]" 
+                options={{ animation: 'slide_from_right' }}
+              />
+              <Stack.Screen 
+                name="+not-found" 
+                options={{ animation: 'fade' }}
               />
             </Stack>
             <StatusBar style="auto" />
